@@ -8,8 +8,16 @@
     "start": "./node_modules/webpack-dev-server/bin/webpack-dev-server.js --hot --progress --colors --inline --port 3001",
     "prepublish": "npm run build"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/serkanalgl/datepicker-for-react.git"
+  },
   "author": "Serkan Algül <serkanalgl@gmail.com>",
   "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/serkanalgl/datepicker-for-react/issues"
+  },
+  "homepage": "https://github.com/serkanalgl/datepicker-for-react#readme",
   "devDependencies": {
     "babel": "^5.5.4",
     "babel-core": "^5.8.38",
