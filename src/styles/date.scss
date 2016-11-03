@@ -1,0 +1,43 @@
+.rc-date {
+  width: 13%;
+  float: left;
+  text-align: center;
+  font-size: 13px;
+  font-weight: 700;
+  transition: background-color 0.25s ease-in-out;
+  border: 1px solid #d8d8d8 !important;
+  color: $color-text;
+  margin: 2px;
+  padding: 6px;
+
+  &.past, &.future {
+    opacity: .7;
+    filter: Alpha(Opacity=70);
+    font-weight: 400;
+  }
+
+  &.disabled{
+    opacity: 1;
+    filter: Alpha(Opacity=1);
+    border-color: #d8d8d8;
+    color: #b3b3b3;
+    font-weight: 700;
+    cursor: default!important;
+  }
+
+  &.selected{
+    opacity: 1;
+    filter: Alpha(Opacity=1);
+    color: $color-text;
+    font-weight: 700;
+    background: #cdde00!important;
+    border: 1px solid #b3c200!important;
+  }
+  
+
+  &:hover {
+    cursor: pointer;
+    background: #f5f9cd!important; 
+    border: 1px solid #d8d8d8!important;
+  }
+}

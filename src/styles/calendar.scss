@@ -1,0 +1,27 @@
+.rc-calendar {
+  background: $color-primary;
+  color: $color-text;
+  border : 1px solid $color-border;
+  transition: all 0.20s ease-in-out;
+  overflow: hidden;
+  min-width: 330px;
+  width: 100%;
+  max-width: 340px;
+  position: absolute!important;
+  z-index: 19000;
+
+  &.calendar-enter {
+    opacity: 0;
+    transform: translateY(1rem);
+  }
+
+  &.calendar-enter-active {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  &.calendar-leave-active {
+    opacity: 0;
+    transform: translateY(1rem);
+  }
+}

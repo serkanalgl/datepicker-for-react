@@ -1,0 +1,25 @@
+@import url(http://fonts.googleapis.com/css?family=Lato:300,400,700);
+
+div[class*="rc-datepicker-"]{
+  font-family: Lato, sans-serif;
+  
+  input{
+  	width: 100%;
+  }
+
+  *, *:before, *:after {
+    box-sizing: border-box;
+    position: relative;
+  }
+
+  &:after{
+  	content: " ";
+    position: absolute;
+    right: 23px;
+    bottom: 23px;
+    width: 16px;
+    height: 16px;
+    z-index: 10;
+    background: url(../public/images/calendar.png) no-repeat #fff;
+  }
+}

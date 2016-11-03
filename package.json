@@ -1,0 +1,36 @@
+{
+  "name": "@serkanalgl/datepicker-for-react",
+  "version": "1.0.0",
+  "description": "A date picker component built with React",
+  "main": "index.js",
+  "scripts": {
+    "build": "./node_modules/webpack/bin/webpack.js -p",
+    "start": "./node_modules/webpack-dev-server/bin/webpack-dev-server.js --hot --progress --colors --inline --port 3001",
+    "prepublish": "npm run build"
+  },
+  "author": "Serkan Algül <serkanalgl@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "babel": "^5.5.4",
+    "babel-core": "^5.8.38",
+    "babel-loader": "^5.4.2",
+    "classnames": "^2.1.2",
+    "css-loader": "^0.25.0",
+    "jsx-loader": "^0.13.2",
+    "lodash": "^3.9.3",
+    "node-libs-browser": "^0.5.2",
+    "node-sass": "^3.10.1",
+    "react": "^0.13.3",
+    "react-addons-css-transition-group": "^15.3.2",
+    "react-moment-proptypes": "^1.2.0",
+    "sass-loader": "^4.0.2",
+    "style-loader": "^0.13.1",
+    "url-loader": "^0.5.7",
+    "extract-text-webpack-plugin": "^1.0.1",
+    "webpack": "^1.13.3",
+    "webpack-dev-server": "^1.9.0"
+  },
+  "dependencies": {
+    "moment": "^2.10.3"
+  }
+}

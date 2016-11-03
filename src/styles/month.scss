@@ -1,0 +1,54 @@
+.rc-month {
+  @include clearfix();
+  height: auto;
+  background-color: $color-primary;
+  color: $color-text;
+  padding: 6.4px;
+  margin-bottom: 10px;
+  transition: all 0.15s ease-in-out;
+
+  &.month-enter {
+    opacity: 0;
+    transform: translateY(1rem);
+  }
+
+  &.month-enter-active {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  &.month-leave {
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    + .rc-month {
+      position: absolute;
+    }
+  }
+
+  &.month-leave-active {
+    opacity: 0;
+    z-index: -1;
+    transform: translateY(-1rem);
+  }
+
+  .rc-days {
+    @include clearfix();
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    padding: 6.4px 0;
+    opacity: 0.5;
+  }
+
+  .rc-day {
+    width: 13%;
+    display: inline-block;
+    float: left;
+    font-size: 9px;
+    text-align: center;
+    margin: 0 2px;
+    text-transform: uppercase;
+  }  
+}

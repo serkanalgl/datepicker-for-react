@@ -1,0 +1,42 @@
+.rc-header {
+  display: flex;
+  flex-direction: row;
+  padding: 8px 8px 6px 8px;
+  border-bottom: 1px solid rgba(white, 0.2);
+  color: $color-text;
+
+  > .rc-heading {
+    flex-grow: 1;
+    text-align: center;
+    font-size: 13px;
+    font-weight:600;
+    margin: 0;
+    padding: 8px;
+    text-transform: uppercase;
+  }
+
+  > .rc-button {
+    appearance: none;
+    -webkit-appearance: none;
+    background: transparent;
+    border: none;
+    color: currentcolor;
+    font-size: 16px;
+    padding: 0 16px;
+    border-radius: 4px;
+    cursor: pointer;
+
+    &.disabled {
+      opacity:0.3;
+      cursor: not-allowed;
+    }
+
+    &:focus {
+      outline: none;
+    }
+
+    &:hover {
+      background: rgba(white, 0.4);
+    }
+  }    
+}
