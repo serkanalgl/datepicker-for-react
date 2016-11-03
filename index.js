@@ -1,1 +1,1 @@
-module.exports = require('./src/components/Datepicker').default;
+module.exports = require('./dist/main.js').default;
